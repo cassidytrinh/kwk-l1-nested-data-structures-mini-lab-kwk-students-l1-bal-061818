@@ -48,8 +48,8 @@ cities = {
 
 def city_populations(cities)
   population = 0
-  cities.each do |city|
-    population += city.value.values[1]
+  cities.each do |city, info|
+    population += info.values[1]
   end
   return population
 end
