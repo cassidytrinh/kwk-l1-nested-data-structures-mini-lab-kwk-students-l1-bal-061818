@@ -15,12 +15,12 @@ def sandwich_request(ingredients, order)
   end
   order.each do |part|
     if all.count(part) == 0
-      rturn false 
+      rturn false
     end
   end
   return true
 end
-  
+
 
 # example city_info hash
 cities = {
