@@ -10,7 +10,7 @@ def sandwich_request(ingredients, order)
   all = []
   ingredients.each do |sub_ingredients|
     for i in 0..2
-      all >> sub_ingredients[i]
+      all.push(sub_ingredients[i])
     end
   end
   order.each do |part|
